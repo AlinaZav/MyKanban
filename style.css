@@ -1,0 +1,141 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-boxs;
+  overflow: hidden;
+}
+
+.app {
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: url(/фон.jpg) center/cover no-repeat;
+}
+
+.boards {
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+.boards_item {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 100%;
+  background-color: rgba(255, 254, 254, 0.5);
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+}
+.boards_item .title {
+  padding: 5px;
+}
+.boards_item .title:focus {
+  outline: 1px solid rgba(168, 168, 168, 0.45);
+}
+.boards_item .list {
+  min-height: 40px;
+}
+.boards_item .list_item {
+  color: black;
+  background-color: #fefefe;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+.boards_item .form {
+  border-radius: 3px;
+  margin-top: auto;
+  display: none;
+}
+.boards_item .form .textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+.boards_item .form .textarea:focus {
+  outline: none;
+}
+.boards_item .form .buttons {
+  display: flex;
+}
+.boards_item .form .buttons .add_item-btn {
+  background: rgb(13, 136, 218);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+}
+.boards_item .form .buttons .cancel_item-btn {
+  padding: 0 10px;
+  background: rgb(160, 17, 12);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.boards_item .add_btn {
+  height: 30px;
+  background: rgba(50, 50, 50, 0.3);
+  border-radius: 3px;
+  margin-top: 5px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+.boards_item .add_btn span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.button {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(253, 255, 254, 0.774);
+  border: none;
+  width: 150px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  color: rgb(7, 7, 7);
+  border-radius: 3px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
